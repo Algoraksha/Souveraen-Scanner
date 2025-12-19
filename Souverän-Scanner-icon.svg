@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A1F44"/>
+      <stop offset="100%" stop-color="#242833"/>
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="42%" r="38%">
+      <stop offset="0%" stop-color="#0F3A7A" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#0F3A7A" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0F3A7A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F6D365"/>
+      <stop offset="45%" stop-color="#F5C542"/>
+      <stop offset="100%" stop-color="#D4A018"/>
+    </linearGradient>
+    <filter id="goldGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#F5C542" flood-opacity="0.7"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="#F5C542" flood-opacity="0.28"/>
+    </filter>
+    <filter id="blueGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#39A9FF" flood-opacity="0.85"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="18" flood-color="#39A9FF" flood-opacity="0.35"/>
+    </filter>
+    <filter id="ggGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#F5C542" flood-opacity="0.9"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#F5C542" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect x="64" y="64" width="896" height="896" rx="180" fill="url(#bgGrad)"/>
+  <circle cx="512" cy="430" r="300" fill="url(#centerGlow)"/>
+
+  <g stroke="#2B8CFF" stroke-width="3" opacity="0.22">
+    <path d="M140 260 L240 320 L340 280 L440 340" fill="none"/>
+    <path d="M880 760 L760 700 L720 760 L620 700" fill="none"/>
+    <path d="M220 660 L300 600 L380 640 L460 580" fill="none"/>
+    <path d="M820 320 L700 380 L620 340 L540 400" fill="none"/>
+    <circle cx="240" cy="320" r="8" fill="#2B8CFF"/>
+    <circle cx="700" cy="380" r="8" fill="#2B8CFF"/>
+    <circle cx="300" cy="600" r="7" fill="#2B8CFF"/>
+    <circle cx="760" cy="700" r="7" fill="#2B8CFF"/>
+    <path d="M512 500 L580 560 L640 520" fill="none"/>
+    <path d="M512 500 L444 560 L384 520" fill="none"/>
+  </g>
+
+  <g filter="url(#goldGlow)">
+    <path d="M300 430 Q 512 400 724 430 L 724 448 Q 512 418 300 448 Z" fill="url(#goldGrad)"/>
+    <rect x="500" y="448" width="24" height="260" rx="12" fill="url(#goldGrad)"/>
+    <rect x="472" y="702" width="80" height="18" rx="9" fill="url(#goldGrad)"/>
+
+    <g stroke="url(#goldGrad)" stroke-width="6">
+      <line x1="340" y1="448" x2="360" y2="560"/>
+      <line x1="364" y1="448" x2="390" y2="560"/>
+      <line x1="684" y1="448" x2="664" y2="560"/>
+      <line x1="660" y1="448" x2="634" y2="560"/>
+    </g>
+
+    <circle cx="360" cy="620" r="62" fill="#1A1F2A" stroke="url(#goldGrad)" stroke-width="10"/>
+    <circle cx="664" cy="620" r="62" fill="#1A1F2A" stroke="url(#goldGrad)" stroke-width="10"/>
+
+    <g filter="url(#ggGlow)">
+      <circle cx="512" cy="438" r="42" fill="#0A1F44" stroke="url(#goldGrad)" stroke-width="6"/>
+      <text x="512" y="446" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="38" fill="#F6D365">GG</text>
+    </g>
+  </g>
+
+  <g filter="url(#blueGlow)">
+    <rect x="170" y="512" width="684" height="8" fill="#3AAFFF"/>
+    <rect x="170" y="512" width="684" height="24" fill="#3AAFFF" opacity="0.28"/>
+  </g>
+
+  <rect x="64" y="64" width="896" height="896" rx="180" fill="none" stroke="#10151F" stroke-width="4" opacity="0.35"/>
+</svg>
